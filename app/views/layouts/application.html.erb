@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Raleighandsuch.com Home</title>
+
+   <%= stylesheet_link_tag 'application' %>
+
+   <%= javascript_include_tag 'application' %>
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+   <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+               <!--  <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-angle-double-up"></i>  <span class="light">Back to</span> Top
+                </a> -->
+                <%= link_to 'Back to the Top', main_home_path %>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <!-- <a href="#page-top"></a> -->
+                        <%= link_to 'Home', main_home_path %>
+                    </li>
+                    <li>
+                        <!-- <a class="page-scroll" href="#about">About</a> -->
+                        <%= link_to 'About', main_about_path %>
+                    </li>
+                    <li>
+                        <!-- <a class="page-scroll" href="#timeline">Timeline</a> -->
+                        <%= link_to 'Timeline', main_timeline_path %>
+                    </li>
+                    <li>
+                        <!-- <a class="page-scroll" href="#intro-blog">Blog</a> -->
+                        <%= link_to 'Blog', main_blog_path %>
+                    </li>
+                    <li>
+                        <!-- <a class="page-scroll" href="#photo-album">Photo Album</a> -->
+                        <%= link_to 'Photo Album', main_photo_album_path %>
+                    </li>
+                    <li>
+                        <!-- <a class="page-scroll" href="#contact">Contact</a> -->
+                        <%= link_to 'Contact', main_contact_path %>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- Page Content -->
+    <div class="container">
+    	
+    	<%= yield %>
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; Raleighandsuch.com 2014</p>
+        </div>
+    </footer>
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="/js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/js/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/js/grayscale.js"></script>
+
+</body>
+
+</html>
+
+
+
