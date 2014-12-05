@@ -2,9 +2,6 @@ class MainController < ApplicationController
   def home
   end
 
-  def about
-  end
-
   def timeline
   end
 
@@ -14,6 +11,4 @@ class MainController < ApplicationController
   def photo_album
   end
 
-  def contact
-  end
 end
