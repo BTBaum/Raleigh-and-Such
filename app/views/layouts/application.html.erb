@@ -40,27 +40,54 @@
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li class="hidden">
                         <!-- <a href="#page-top"></a> -->
-                        <%= link_to 'Home', main_home_path %>
+                        <%= link_to 'Home', root_path %>
                     </li>
                     <li>
                         <!-- <a class="page-scroll" href="#about">About</a> -->
-                        <%= link_to 'About', '#about' %>
+                        <%= link_to 'About', '#about', class: 'page-scroll' %>
                     </li>
                     <li>
                         <!-- <a class="page-scroll" href="#timeline">Timeline</a> -->
-                        <%= link_to 'Timeline', '#timeline' %>
+                        <%= link_to 'Timeline', '#timeline', class: 'page-scroll' %>
                     </li>
                     <li>
                         <!-- <a class="page-scroll" href="#intro-blog">Blog</a> -->
-                        <%= link_to 'Blog', '#blog' %>
+                        <%= link_to 'Blog', '#intro-blog', class: 'page-scroll' %>
                     </li>
-                    <li>
+                    <li role="presentation" class="dropdown">
                         <!-- <a class="page-scroll" href="#photo-album">Photo Album</a> -->
-                        <%= link_to 'Photo Album', '#photo-album' %>
+                        <%= link_to  '#photo-album', class: 'dropdown-toggle page-scroll', data: {toggle:'dropdown'} do%>
+                              Photo Album <span class="caret"></span>
+                            <% end %>
+                            <ul class="dropdown-menu" role="menu">
+                            
+                                 <li><%= link_to '2009/10', '#2009-10' %></li>
+                                <!-- <li>
+                                    <a href="photo_album.html">2009/10</a>
+                                </li> -->
+                                <li><%= link_to '2011', '#2011' %></li>
+                                <!-- <li>
+                                    <a href="photo_album2011.html">2011</a>
+                                </li> -->
+                               <li> <%= link_to '2012', '#2012' %></li>
+                                <!-- <li>
+                                    <a href="photo_album2012.html">2012</a>
+                                </li> -->
+                               <li> <%= link_to '2013', '#2013' %></li>
+                                <!--  <li>
+                                    <a href="photo_album2013.html">2013</a>
+                                </li> -->
+                               <li> <%= link_to '2014', '#2014' %></li>
+                                 <!-- <li>
+                                    <a href="photo_album2014.html">2014</a>
+                                </li> -->
+                            </ul>
                     </li>
+
+
                     <li>
                         <!-- <a class="page-scroll" href="#contact">Contact</a> -->
-                        <%= link_to 'Contact', '#contact' %>
+                        <%= link_to 'Contact', '#contact', class: 'page-scroll' %>
                     </li>
                 </ul>
             </div>

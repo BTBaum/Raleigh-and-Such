@@ -1,19 +1,9 @@
 Rails.application.routes.draw do
-  get 'main/home'
-
-  get 'main/about'
-
-  get 'main/timeline'
+  root 'main#home'
 
   get 'main/blog'
 
   get 'main/photo_album'
-
-  get 'main/contact'
-
-
-
-
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
