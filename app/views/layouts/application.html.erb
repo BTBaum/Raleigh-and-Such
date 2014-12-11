@@ -27,11 +27,9 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <i class="fa fa-angle-double-up"></i>  <span class="light">Back to</span> Top
-                </a>
-                
-
+                <!--  <a class="navbar-brand page-scroll" href="#page-top"> -->
+                <!--  <i class="fa fa-angle-double-up"></i>  <span class="light">Back to</span> Top -->
+                <%= link_to 'Home', root_path, class: 'fa fa-angle-double-up', class: 'light', class: 'Top' %>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -44,15 +42,15 @@
                     </li>
                     <li>
                         <!-- <a class="page-scroll" href="#about">About</a> -->
-                        <%= link_to 'About', '#about', class: 'page-scroll' %>
+                        <%= link_to 'About', root_path(anchor: 'about'), class: 'page-scroll magic' %>
                     </li>
                     <li>
                         <!-- <a class="page-scroll" href="#timeline">Timeline</a> -->
-                        <%= link_to 'Timeline', '#timeline', class: 'page-scroll' %>
+                        <%= link_to 'Timeline', root_path(anchor: 'timeline'), class: 'page-scroll' %>
                     </li>
                     <li>
                         <!-- <a class="page-scroll" href="#intro-blog">Blog</a> -->
-                        <%= link_to 'Blog', '#intro-blog', class: 'page-scroll' %>
+                        <%= link_to 'Blog', root_path(anchor: 'intro-blog'), class: 'page-scroll' %>
                     </li>
                     <li role="presentation" class="dropdown">
                         <!-- <a class="page-scroll" href="#photo-album">Photo Album</a> -->
@@ -87,7 +85,7 @@
 
                     <li>
                         <!-- <a class="page-scroll" href="#contact">Contact</a> -->
-                        <%= link_to 'Contact', '#contact', class: 'page-scroll' %>
+                        <%= link_to 'Contact', root_path(anchor: 'contact'), class: 'page-scroll' %>
                     </li>
                 </ul>
             </div>

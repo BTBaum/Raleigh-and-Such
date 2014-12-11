@@ -17,12 +17,24 @@ $(window).scroll(function() {
 $(function() {
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
+    // removes the / from the anchor in nav - only leaves the # (ex. #about)
+        var remove_slash = $anchor.attr('href');
+        var pound = remove_slash.substring(1);
         $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
+
+            scrollTop: $(pound).offset().top
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
 });
+
+    // $('.magic').on('click', function(){
+    //     alert('Is this working?')
+    //     window.location.href='localhost:3001'; 
+    // });
+
+
+
 
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a').click(function() {
