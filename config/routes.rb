@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root 'main#home'
 
-  get 'main/blog'
+  resources :posts
 
   get 'main/photo_album'
 
