@@ -5,9 +5,6 @@ class MainController < ApplicationController
   def timeline
   end
 
-  def blog
-  end
-
   def photo_album
   end
 
