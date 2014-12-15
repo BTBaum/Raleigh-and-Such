@@ -4,6 +4,8 @@ gem 'awesome_print'
 
 gem 'bootstrap-sass'
 
+gem 'rails-bootstrap-markdown', '~> 2.6.0'
+
 gem 'therubyracer'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
